@@ -19,7 +19,7 @@ import org.json.simple.parser.JSONParser;
 
 public class apiTest {
     static final String xAuthToken = "7bb231b340a24370113de9113fca8ba1";
-    static final String baseUrl = " https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users";
+    static final String baseUrl = "https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users";
     static int[][] move = new int [][] {
             {0,0} // 0 : 아무것도 안함
             ,{1,0} // 1 : 위쪽으로 -> col++
@@ -29,6 +29,7 @@ public class apiTest {
     };
     static String score1;
     static String score2;
+    // static final ApiCall apiCall = new ApiCall();
     public static void main(String[] args) throws Exception {
         // start
         JSONObject startParam = new JSONObject();
